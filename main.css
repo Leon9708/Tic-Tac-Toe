@@ -1,0 +1,146 @@
+body {
+    font-family: 'montserrat', sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    height: 100vh;
+}
+
+body,
+table,
+td,
+tr,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    height: 10rem;
+}
+
+td {
+    position: relative;
+    width: 10rem;
+    border: solid 5px black;
+}
+
+td:hover {
+    background-color: rgba(145, 240, 37, 0.101);
+}
+
+td:first-of-type {
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+td:nth-of-type(2) {
+    border-top-color: transparent;
+}
+
+td:nth-of-type(3) {
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+tr:nth-of-type(3) td {
+    border-bottom-color: transparent;
+}
+
+.container_game {
+    position: relative;
+}
+
+.place_player {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.box_player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.img_player {
+    width: 5rem;
+    height: 5rem;
+}
+
+.player_inactive {
+    opacity: 0.5;
+}
+
+.circle,
+.cross {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.d-none {
+    display: none;
+}
+
+.line {
+    position: absolute;
+    left: 17%;
+    transform: scaleX(0);
+    top: 4.75rem;
+    height: 10px;
+    width: 21rem;
+    background-color: rgba(0, 0, 0, 0.484);
+    border-radius: 2rem;
+    transition: transform 220ms ease-in-out;
+}
+
+.vertical_line {
+    transform: rotate(90deg) scaleX(0);
+    transition: transform 220ms ease-in-out;
+}
+
+.diagonal_line_1 {
+    transform: rotate(45deg) scaleX(0);
+    top: 15rem;
+    left: 1.3rem;
+    width: 29rem;
+    transition: transform 220ms ease-in-out;
+}
+
+.diagonal_line_2 {
+    width: 29rem;
+    left: 1.3rem;
+    top: 15em;
+    transform: rotate(-45deg) scaleX(0);
+    transition: transform 220ms ease-in-out;
+}
+
+.gameover {
+    position: absolute;
+    width: 75%;
+    object-fit: cover;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}

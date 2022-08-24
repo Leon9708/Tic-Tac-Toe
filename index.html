@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="./fonts/montserrat.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <img class="gameover d-none" src="./img/game-over.png">
+
+    <div class="place_player">
+        <div class="box_player player_1">
+            <img class="img_player " src="./img/circle.png">
+            <h1>Player 1</h1>
+        </div>
+        <div class="box_player player_2">
+            <img class="img_player" src="./img/cross.png">
+            <h1>Player 2</h1>
+        </div>
+    </div>
+
+    <div class="container_game">
+        <div id="line1" class="line"></div>
+        <div id="line2" class="line" style="top: 15rem;"></div>
+        <div id="line3" class="line" style="top: 25.2rem;"></div>
+        <div id="line4" class="line vertical_line" style="top: 15rem; left: -5rem;"></div>
+        <div id="line5" class="line vertical_line" style="top: 15rem;"></div>
+        <div id="line6" class="line vertical_line" style="top: 15rem; left: 15.5rem;"></div>
+        <div id="line7" class="line diagonal_line_1"></div>
+        <div id="line8" class="line diagonal_line_2"></div>
+        <table class="place_game" id="placeGame">
+            <tr>
+                <td onclick="elementId(0)" id="field1">
+                    <img id="circle0" class="circle d-none" src="./img/circle.png">
+                    <img id="cross0" class="cross d-none" src="./img/cross.png">
+                </td>
+                <td onclick="elementId(1)" id="field2">
+                    <img id="circle1" class="circle d-none" src="./img/circle.png">
+                    <img id="cross1" class="cross d-none" src="./img/cross.png">
+                </td>
+                <td onclick="elementId(2)" id="field3">
+                    <img id="circle2" class="circle d-none" src="./img/circle.png">
+                    <img id="cross2" class="cross d-none" src="./img/cross.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="elementId(3)" id="field4">
+                    <img id="circle3" class="circle d-none" src="./img/circle.png">
+                    <img id="cross3" class="cross d-none" src="./img/cross.png">
+                </td>
+                <td onclick="elementId(4)" id="field5">
+                    <img id="circle4" class="circle d-none" src="./img/circle.png">
+                    <img id="cross4" class="cross d-none" src="./img/cross.png">
+                </td>
+                <td onclick="elementId(5)" id="field6">
+                    <img id="circle5" class="circle d-none" src="./img/circle.png">
+                    <img id="cross5" class="cross d-none" src="./img/cross.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="elementId(6)" id="field7">
+                    <img id="circle6" class="circle d-none" src="./img/circle.png">
+                    <img id="cross6" class="cross d-none" src="./img/cross.png">
+                </td>
+                <td onclick="elementId(7)" id="field8">
+                    <img id="circle7" class="circle d-none" src="./img/circle.png">
+                    <img id="cross7" class="cross d-none" src="./img/cross.png">
+                </td>
+                <td onclick="elementId(8)" id="field9">
+                    <img id="circle8" class="circle d-none" src="./img/circle.png">
+                    <img id="cross8" class="cross d-none" src="./img/cross.png">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
